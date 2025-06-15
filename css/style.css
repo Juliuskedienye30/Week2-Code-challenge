@@ -1,0 +1,128 @@
+/* Basic page styling */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #2799be;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main container styling */
+.app-container {
+  max-width: 500px;
+  margin: auto;
+  background: rgb(179, 177, 177);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #080808;
+}
+
+/* Form layout using flex */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Shared input, select, and button styling */
+input, select, button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #3618e0;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Button style */
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #388e3c;
+}
+
+/* Guest list styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Each guest item */
+li {
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  position: relative;
+  background: #f9f9f9;
+  align-items: center;
+}
+
+/* Badge style for category */
+.badge {
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+/* Category color codes */
+.friend { background-color: #d30c91; }    /* Blue for friends */
+.family { background-color: #98ca10; }    /* Pink for family */
+.colleague { background-color: #0011ff; } /* Orange for colleagues */
+
+/* RSVP button style */
+.rsvp {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* RSVP attending state */
+.attending {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* RSVP not attending state */
+.not-attending {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Timestamp below name */
+.timestamp {
+  display: block;
+  font-size: 16px;
+  color:black;
+  margin-top: 5px;
+}
+
+/* Container for buttons */
+.actions {
+  margin-top: 10px;
+}
+
+/* Buttons inside actions */
+.actions button {
+  margin-right: 6px;
+  font-size: 14px;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Declares the document type -->
+<html lang="en"> <!-- Root element with language set to English -->
+<head>
+  <meta charset="UTF-8" /> <!-- Character encoding -->
+  <title>Guest List App</title> <!-- Title shown in browser tab -->
+  <link rel="stylesheet" href="../css/style.css" /> <!-- Link to external CSS -->
+</head>
+<body>
+  <div class="app-container"> <!-- Main wrapper -->
+    <h1>Event Guest List Manager</h1> <!-- App heading -->
+
+    <!-- Form to input guest name and category -->
+    <form id="guest-form">
+      <input type="text" id="guest-name" placeholder="Enter guest name" required /> <!-- Name input -->
+      <select id="guest-category" required> <!-- Dropdown for category -->
+        <option value="" disabled selected>Select Category</option> <!-- Placeholder -->
+        <option value="friend">Friend</option>
+        <option value="family">Family</option>
+        <option value="colleague">Colleague</option>
+      </select>
+      <button type="submit">Add Guest</button> <!-- Submit button -->
+    </form>
+
+    <ul id="guest-list"></ul> <!-- Unordered list to display guests -->
+  </div>
+
+  <script src="../js/index.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
