@@ -8,14 +8,14 @@ body {
   font-family: "Segoe UI", sans-serif;
   background: url('../image/image.png') no-repeat center center fixed;
   background-size: cover;
-  color: #0a0909;
+  color: #0a0a0a;
   margin: 0;
   padding: 0;
 }
 
 /* Navbar styling */
 .navbar {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(209, 201, 201, 0.85);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@ body {
   z-index: 1000;
 }
 .navbar h2 {
-  color: white;
+  color: rgb(145, 34, 34);
 }
 .navbar ul {
   list-style: none;
@@ -36,23 +36,23 @@ body {
   display: inline;
 }
 .navbar a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 .navbar a:hover {
-  color: #ffcc00;
+  color: #00ff88;
 }
 
 /* App container */
 .app-container {
   max-width: 600px;
   margin: 80px auto 40px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(42, 138, 167, 0.95);
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Headings */
