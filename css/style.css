@@ -1,38 +1,74 @@
-/* Basic page styling */
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background image */
 body {
   font-family: "Segoe UI", sans-serif;
-  background: #2799be;
-  color: #333;
+  background: url('../image/image.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #0a0909;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
 
-/* Main container styling */
+/* Navbar styling */
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar h2 {
+  color: white;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar li {
+  display: inline;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* App container */
 .app-container {
-  max-width: 500px;
-  margin: auto;
-  background: rgb(179, 177, 177);
+  max-width: 600px;
+  margin: 80px auto 40px;
+  background: rgba(255, 255, 255, 0.95);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Heading style */
-h1 {
+/* Headings */
+h1, h3 {
   text-align: center;
+  color: #333;
   margin-bottom: 20px;
-  color: #080808;
 }
 
-/* Form layout using flex */
+/* Form styling */
 form {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
-
-/* Shared input, select, and button styling */
 input, select, button {
   flex: 1;
   padding: 10px;
@@ -40,39 +76,40 @@ input, select, button {
   border-radius: 6px;
   font-size: 16px;
 }
-
-/* Button style */
 button {
   background-color: #4caf50;
   color: white;
   border: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
-
-/* Hover effect for button */
 button:hover {
   background-color: #388e3c;
 }
 
-/* Guest list styles */
+/* Invite section */
+.invite-section {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Guest list */
 ul {
   list-style-type: none;
   padding: 0;
 }
-
-/* Each guest item */
 li {
   padding: 12px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
   border-radius: 6px;
-  position: relative;
   background: #f9f9f9;
-  align-items: center;
 }
 
-/* Badge style for category */
+/* Category badges */
 .badge {
   padding: 3px 8px;
   font-size: 12px;
@@ -80,13 +117,11 @@ li {
   margin-left: 10px;
   color: white;
 }
+.friend { background-color: #d30c91; }
+.family { background-color: #98ca10; }
+.colleague { background-color: #0011ff; }
 
-/* Category color codes */
-.friend { background-color: #d30c91; }    /* Blue for friends */
-.family { background-color: #98ca10; }    /* Pink for family */
-.colleague { background-color: #0011ff; } /* Orange for colleagues */
-
-/* RSVP button style */
+/* RSVP buttons */
 .rsvp {
   border: none;
   padding: 5px 10px;
@@ -94,34 +129,91 @@ li {
   margin-right: 10px;
   cursor: pointer;
 }
-
-/* RSVP attending state */
 .attending {
   background-color: #4caf50;
   color: white;
 }
-
-/* RSVP not attending state */
 .not-attending {
   background-color: #f44336;
   color: white;
 }
 
-/* Timestamp below name */
+/* Timestamp */
 .timestamp {
   display: block;
-  font-size: 16px;
-  color:black;
+  font-size: 14px;
+  color: #333;
   margin-top: 5px;
 }
 
-/* Container for buttons */
+/* Action buttons (edit/delete) */
 .actions {
   margin-top: 10px;
 }
-
-/* Buttons inside actions */
 .actions button {
   margin-right: 6px;
   font-size: 14px;
+}
+
+/* Contact section */
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+.contact-section a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* 🌸 Animated flowers */
+.flower-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+.flower {
+  position: absolute;
+  width: 40px;
+  opacity: 0.7;
+  animation: float 10s linear infinite;
+}
+.flower1 {
+  left: 10%;
+  animation-delay: 0s;
+}
+.flower2 {
+  left: 70%;
+  animation-delay: 5s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
 }

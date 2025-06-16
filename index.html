@@ -1,29 +1,59 @@
-<!DOCTYPE html> <!-- Declares the document type -->
-<html lang="en"> <!-- Root element with language set to English -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" /> <!-- Character encoding -->
-  <title>Guest List App</title> <!-- Title shown in browser tab -->
-  <link rel="stylesheet" href="./css/style.css" /> <!-- Link to external CSS -->
-   </head>
+  <meta charset="UTF-8" />
+  <title>Guest List App</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 <body>
-  <div class="app-container"> <!-- Main wrapper -->
-    <h1>Event Guest List Manager</h1> <!-- App heading -->
 
-    <!-- Form to input guest name and category -->
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <h2>My Wedding</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#guests">Guests</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main App Container -->
+  <div class="app-container" id="home">
+    <h1>Event Guest List Manager</h1>
+
+    <!-- Form to add guests -->
     <form id="guest-form">
-      <input type="text" id="guest-name" placeholder="Enter guest name" required /> <!-- Name input -->
-      <select id="guest-category" required> <!-- Dropdown for category -->
-        <option value="" disabled selected>Select Category</option> <!-- Placeholder -->
+      <input type="text" id="guest-name" placeholder="Enter guest name" required />
+      <select id="guest-category" required>
+        <option value="" disabled selected>Select Category</option>
         <option value="friend">Friend</option>
         <option value="family">Family</option>
         <option value="colleague">Colleague</option>
       </select>
-      <button type="submit">Add Guest</button> <!-- Submit button -->
+      <button type="submit">Add Guest</button>
     </form>
 
-    <ul id="guest-list"></ul> <!-- Unordered list to display guests -->
+    <!-- Invite Message Section -->
+    <section class="invite-section" id="guests">
+      <h3>Invite guests to your awesome Wedding</h3>
+      <p>Make sure <strong>everyone</strong> you care about is listed and marked as attending.</p>
+    </section>
 
+    <!-- Guest List Display -->
+    <ul id="guest-list"></ul>
   </div>
-         <script src="./js/index.js"></script> <!-- Link to JavaScript file -->
+
+  <!-- Contact Section -->
+  <div class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:event@example.com">event@example.com</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Event App. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/index.js"></script>
 </body>
 </html>
