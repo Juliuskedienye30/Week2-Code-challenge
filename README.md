@@ -12,8 +12,8 @@ The project is built using HTML, CSS, and JavaScript.
 	Display all guests in a styled list
 	Remove guests using a "Remove" button
 	Edit guest names after adding
-	Limit guest list to 10 people — with an alert if limit is exceeded
-	Toggle RSVP status — mark guests as “Attending” or “Not Attending”
+	Limit guest list to 10 people, with an alert if limit is exceeded
+	Toggle RSVP status , mark guests as “Attending” or “Not Attending”
 	Categorize guests as:
 	Friend
 	Family
