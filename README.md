@@ -34,7 +34,7 @@ The project is built using HTML, CSS, and JavaScript.
 ---
 
 ## Project Structure
-
+```
 Week2-Code-challenge/
 │
 ├── html/
@@ -45,7 +45,7 @@ Week2-Code-challenge/
 │
 ├── js/
 │ └── index.js # Full app logic and DOM manipulation
-
+```
 ## Testing
 
 This project is **manually tested in the browser**:
