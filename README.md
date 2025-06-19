@@ -1,4 +1,4 @@
-## Event Guest List Manager
+# Event Guest List Manager
 
 This is a simple and interactive web application that allows users to manage a guest list for an event. 
 It enables adding, removing, editing, categorizing, and toggling RSVP status for each guest. 
@@ -86,6 +86,6 @@ This project is **manually tested in the browser**:
 
 Built with by Julius  Kedienye
 
-	Final Year Computing Student | Ethical Hacker | Web Developer  
-	Email: juliuskedienye61@gmail.com  
+•	Final Year Computing Student | Ethical Hacker | Web Developer  
+•	Email: juliuskedienye61@gmail.com  
 
